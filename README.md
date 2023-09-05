@@ -5,3 +5,5 @@
 <div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="apt-get upgrade -y"><pre>apt-get upgrade -y</pre></div>
 
 <div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/SSHPLUS-MANAGER-FREE/master/Plus &amp;&amp; chmod +x Plus* &amp;&amp; ./Plus*"><pre>wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/SSHPLUS-MANAGER-FREE/master/Plus <span class="pl-k">&amp;&amp;</span> chmod +x Plus<span class="pl-k">*</span> <span class="pl-k">&amp;&amp;</span> ./Plus<span class="pl-k">*</span></pre></div>
+
+<p dir="auto">DATA: Missing dependencies will be installed automatically</p>
