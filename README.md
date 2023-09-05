@@ -6,5 +6,5 @@ apt-get update -y
 apt-get upgrade -y
 ```
 ```bash
-wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/SSHPLUS-MANAGER-FREE/master/Plus && chmod +x Plus* && ./Plus*
+wget https://raw.githubusercontent.com/sansoe2022/own-sshplus-script/main/Plus && chmod +x Plus* && ./Plus*
 ```
