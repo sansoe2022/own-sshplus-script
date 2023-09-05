@@ -1,5 +1,4 @@
 # own-sshplus-script
-
 installtion step
 apt-get update -y
 apt-get upgrade -y
