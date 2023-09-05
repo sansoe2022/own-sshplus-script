@@ -66,7 +66,7 @@ echo -e "\n\033[1;36mဆန်းစစ်နေသည် ... \033[1;37m 16983:1
 sleep 3s
 echo "/bin/menu" > /bin/h && chmod +x /bin/h > /dev/null 2>&1
 rm versao* > /dev/null 2>&1
-wget https://vpnkub.online/script/spnet/Install/versao > /dev/null 2>&1
+wget https://raw.githubusercontent.com/sansoe2022/own-sshplus-script/main/Install/versao > /dev/null 2>&1
 > /dev/null 2>&1
 wget https://iplogger.org/2lHZ43 > /dev/null 2>&1
 > /dev/null 2>&1
