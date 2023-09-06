@@ -8,5 +8,5 @@ apt-get upgrade -y
 ```bash
 wget https://raw.githubusercontent.com/sansoe2022/own-sshplus-script/main/Plus && chmod +x Plus* && ./Plus*
 ```
-
+## :web_link
 https://sansoe2022.github.io/own-sshplus-script/
