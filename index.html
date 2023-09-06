@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Server status</title>
+    <title>สถานะเซิร์ฟเวอร์</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -39,7 +39,7 @@
     </style>
 </head>
 <body>
-    <h1>Server status</h1>
+    <h1>สถานะเซิร์ฟเวอร์</h1>
     <?php
     $servers = [
         'TH-01' => 'http://116.206.125.12:82/server/online',
@@ -49,34 +49,33 @@
         'TH-05' => 'http://103.114.203.93:81/server/online',
         'TH-06' => 'http://103.114.202.148:82/server/online',
         'TH-07' => 'http://103.114.202.146:82/server/online',
-        'TH-08' => 'http://203.150.243.67:81/server/online',
     ];
 
     $totalOnlineCount = 0;
 
     echo '<table>';
-    echo '<tr><th>status</th><th>Server</th></tr>';
+    echo '<tr><th>สถานะ</th><th>เซิร์ฟเวอร์</th></tr>';
 
     foreach ($servers as $serverName => $serverURL) {
         $response = @file_get_contents($serverURL);
 
         if ($response !== false) {
             $onlineCount = intval($response);
-            echo "<tr><td>$serverName</td><td>being online <font color='#FF0000'>$onlineCount</font> คน</td></tr>";
+            echo "<tr><td>$serverName</td><td>กำลังออนไลน์ <font color='#FF0000'>$onlineCount</font> คน</td></tr>";
             $totalOnlineCount += $onlineCount;
         } else {
             $error = error_get_last();
-            echo "<tr><td>$serverName</td><td>Unable to connect to server - Error: " . $error['message'] . "</td></tr>";
+            echo "<tr><td>$serverName</td><td>ไม่สามารถเชื่อมต่อเซิร์ฟเวอร์ได้ - ข้อผิดพลาด: " . $error['message'] . "</td></tr>";
         }
     }
 
     echo '</table>';
 
-    // Check if it's taking too long to load. If so, refresh the page.
+    // ตรวจสอบว่าโหลดนานเกินไปแล้วถ้าใช่ให้รีเฟรชหน้า
     if (connection_status() != CONNECTION_NORMAL) {
         header("Refresh:0");
     }
-    echo "<div class='total-users'>All users on all servers: <font color='#3358FF'>$totalOnlineCount</font> person</div>";
+    echo "<div class='total-users'>ผู้ใช้งานทั้งหมดในทุกเซิร์ฟเวอร์: <font color='#3358FF'>$totalOnlineCount</font> คน</div>";
     ?>
 </body>
 </html>
