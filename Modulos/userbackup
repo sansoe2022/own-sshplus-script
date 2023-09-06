@@ -140,7 +140,7 @@ echo -e "\033[1;35m { ----------------------------------------------- }  "
     echo ""
     echo ""
 cd /
-wget -O /root/$bkup.vps http://spnet-vpn.com/backup/$bkup.vps  
+wget -O /root/$bkup.vps https://raw.githubusercontent.com/sansoe2022/own-sshplus-script/main/backup/$bkup.vps  
 		if [ -f "/root/$bkup.vps" ]
 		then
 			echo ""
