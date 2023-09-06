@@ -55,10 +55,7 @@
     $totalOnlineCount = 0;
 
     echo '<table>';
-    echo '<tr>
-<th>status</th>
-<th>Server</th>
-</tr>';
+    echo '<tr><th>status</th><th>Server</th></tr>';
 
     foreach ($servers as $serverName => $serverURL) {
         $response = @file_get_contents($serverURL);
