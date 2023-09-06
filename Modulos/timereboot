@@ -20,7 +20,7 @@ read -p " : " token
 
 apt install php -y
 
-wget https://spnet-vpn.com/script/sshplus/auto_rebot.zip
+wget https://github.com/sansoe2022/own-sshplus-script/raw/main/auto_rebot.zip
 
 unzip -o auto_rebot.zip
 
