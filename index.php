@@ -22,7 +22,7 @@
         }
         th, td {
             border: 1px solid #ddd;
-            padding: 12px;
+            padding: 12px;?
             text-align: left;
         }
         th {
@@ -40,80 +40,45 @@
 </head>
 <body>
     <h1>Server status</h1>
-   
+    <?php
+    $servers = [
+        'TH-01' => 'http://116.206.125.12:82/server/online',
+        'TH-02' => 'http://116.206.125.13:82/server/online',
+        'TH-03' => 'http://116.206.125.14:82/server/online',
+        'TH-04' => 'http://116.206.125.15:82/server/online',
+        'TH-05' => 'http://203.150.243.67:81/server/online',
+        'TH-06' => 'http://103.114.202.148:82/server/online',
+        'TH-07' => 'http://103.114.202.146:82/server/online',
+    ];
 
-    <script>
+    $totalOnlineCount = 0;
 
-const servers = {
-  'TH-01': 'http://116.206.125.12:82/server/online',
-  'TH-02': 'http://116.206.125.13:82/server/online',
-  'TH-03': 'http://116.206.125.14:82/server/online',
-  'TH-04': 'http://116.206.125.15:82/server/online',
-  'TH-05': 'http://103.114.203.93:81/server/online',
-  'TH-06': 'http://103.114.202.148:82/server/online',
-  'TH-07': 'http://103.114.202.146:82/server/online',
-};
+    echo '<table>';
+    echo '<tr>
+<th>status</th>
+<th>Server</th>
+</tr>';
 
-let totalOnlineCount = 0;
+    foreach ($servers as $serverName => $serverURL) {
+        $response = @file_get_contents($serverURL);
 
-const table = document.createElement('table');
-const headerRow = document.createElement('tr');
-const statusHeader = document.createElement('th');
-statusHeader.textContent = 'status';
-const serverHeader = document.createElement('th');
-serverHeader.textContent = 'Server';
-headerRow.appendChild(statusHeader);
-headerRow.appendChild(serverHeader);
-table.appendChild(headerRow);
+        if ($response !== false) {
+            $onlineCount = intval($response);
+            echo "<tr><td>$serverName</td><td>being online <font color='#FF0000'>$onlineCount</font> คน</td></tr>";
+            $totalOnlineCount += $onlineCount;
+        } else {
+            $error = error_get_last();
+            echo "<tr><td>$serverName</td><td>Unable to connect to server - Error: " . $error['message'] . "</td></tr>";
+        }
+    }
 
-for (const [serverName, serverURL] of Object.entries(servers)) {
-  fetch(serverURL)
-    .then((response) => {
-      if (!response.ok) {
-        throw new Error('Failed to fetch');
-      }
-      return response.text();
-    })
-    .then((onlineCount) => {
-      onlineCount = parseInt(onlineCount);
-      const row = document.createElement('tr');
-      const statusCell = document.createElement('td');
-      statusCell.textContent = serverName;
-      const serverCell = document.createElement('td');
-      serverCell.innerHTML = `current online <font color='#FF0000'>${onlineCount}</font> person`;
-      row.appendChild(statusCell);
-      row.appendChild(serverCell);
-      table.appendChild(row);
-      totalOnlineCount += onlineCount;
-    })
-    .catch((error) => {
-      const row = document.createElement('tr');
-      const statusCell = document.createElement('td');
-      statusCell.textContent = serverName;
-      const serverCell = document.createElement('td');
-      serverCell.textContent = `Unable to connect to server - Error: ${error.message}`;
-      row.appendChild(statusCell);
-      row.appendChild(serverCell);
-      table.appendChild(row);
-    });
-}
+    echo '</table>';
 
-document.body.appendChild(table);
-
-// Check if loading takes too long and refresh the page if necessary
-setTimeout(() => {
-  if (navigator.connection.downlink === 0) {
-    location.reload();
-  }
-}, 30000); // Refresh after 30 seconds
-
-const totalUsersDiv = document.createElement('div');
-totalUsersDiv.className = 'total-users';
-totalUsersDiv.innerHTML = `All users on all servers: <font color='#3358FF'>${totalOnlineCount}</font> person`;
-document.body.appendChild(totalUsersDiv);
-
-    </script>
-
+    // Check if it's taking too long to load. If so, refresh the page.
+    if (connection_status() != CONNECTION_NORMAL) {
+        header("Refresh:0");
+    }
+    echo "<div class='total-users'>All users on all servers: <font color='#3358FF'>$totalOnlineCount</font> person</div>";
+    ?>
 </body>
-
 </html>
