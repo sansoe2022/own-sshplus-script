@@ -46,7 +46,7 @@
         'TH-02' => 'http://116.206.125.13:82/server/online',
         'TH-03' => 'http://116.206.125.14:82/server/online',
         'TH-04' => 'http://116.206.125.15:82/server/online',
-        'TH-05' => 'http://203.150.243.67:81/server/online',
+        'TH-05' => 'http://203.150.243.147:82/server/online',
         'TH-06' => 'http://103.114.202.148:82/server/online',
         'TH-07' => 'http://103.114.202.146:82/server/online',
     ];
