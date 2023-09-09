@@ -30,7 +30,7 @@ IP=$(cat /etc/IP)
 x="ok"
 menu() {
     velocity() {
-        กรุณารอ() {
+        wait() {
             comando[0]="$1"
             comando[1]="$2"
             (
@@ -63,7 +63,7 @@ menu() {
         echo ""
         echo -e "   \033[1;32mTest speed !\033[0m"
         echo ""
-        กรุณารอ 'fun_tst'
+        wait 'fun_tst'
         echo ""
         png=$(cat speed | sed -n '5 p' | awk -F : {'print $NF'})
         down=$(cat speed | sed -n '7 p' | awk -F : {'print $NF'})
@@ -333,9 +333,9 @@ function nginxinstall () {
         echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
         echo -e "\E[41;1;37m               ⇱ San Soe SCRIPT ⇲                \E[0m"
         echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-        echo -e "\033[1;32mSYSTEM            RAM MEMORY      PROCESSOR "
-        echo -e "\033[1;31mOS: \033[1;37m$_system \033[1;31mTotal:\033[1;37m$_ram\033[1;31mCpu: \033[1;37m$_core\033[0m"
-        echo -e "\033[1;31mTime: \033[1;37m$_hora \033[1;31mUsage: \033[1;37m$_usor \033[1;31mUsage: \033[1;37m$_usop\033[0m"
+        echo -e "\033[1;32mSYSTEM             RAM MEMORY       PROCESSOR "
+        echo -e "\033[1;31mOS: \033[1;37m$_system \033[1;31mTotal:\033[1;37m$_ram \033[1;31mCores: \033[1;37m$_core\033[0m"
+        echo -e "\033[1;31mTime: \033[1;37m$_hora     \033[1;31mUsage: \033[1;37m$_usor \033[1;31mUsage: \033[1;37m$_usop\033[0m"
         echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
         [[ ! -e /tmp/att ]] && {
             echo -e "\033[1;32mOnline:\033[1;37m $_onlin     \033[1;31mExpired: \033[1;37m$_userexp \033[1;33mTotal: \033[1;37m$_tuser\033[0m"
@@ -477,8 +477,8 @@ function nginxinstall () {
         echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
         echo -e "\E[41;1;37m               ⇱ San Soe SCRIPT ⇲                \E[0m"
         echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-        echo -e "\033[1;32mSYSTEM            RAM MEMORY      PROCESSOR "
-        echo -e "\033[1;31mOS: \033[1;37m$_system \033[1;31mTotal:\033[1;37m$_ram \033[1;31mCpu: \033[1;37m$_core\033[0m"
+        echo -e "\033[1;32mSYSTEM             RAM MEMORY      PROCESSOR "
+        echo -e "\033[1;31mOS: \033[1;37m$_system \033[1;31mTotal:\033[1;37m$_ram \033[1;31mCores: \033[1;37m$_core\033[0m"
         echo -e "\033[1;31mTime: \033[1;37m$_hora     \033[1;31mUsage: \033[1;37m$_usor \033[1;31mUsage: \033[1;37m$_usop\033[0m"
         echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
         echo -e "\033[1;32mOnlines:\033[1;37m $_onlin     \033[1;31mExpired: \033[1;37m$_userexp \033[1;33mTotal: \033[1;37m$_tuser\033[0m"
