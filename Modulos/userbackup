@@ -2,8 +2,8 @@
 clear
 echo ""
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "\033[0;32m-        TRANSLATE BY San Soe  Modified                  -\033[0m"
-echo -e "\033[0;32m-        Telegram ID : https://t.me/sansoe2021                        -\033[0m"
+echo -e "\033[0;32m        TRANSLATE BY San Soe  Modified                  \033[0m"
+echo -e "\033[0;32m        Telegram ID : https://t.me/sansoe2021                        \033[0m"
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo ""
 backbot=$1
@@ -140,7 +140,7 @@ echo -e "\033[1;35m { ----------------------------------------------- }  "
     echo ""
     echo ""
 cd /
-wget -O /root/$bkup.vps https://yourDomain/backup/$bkup.vps  
+wget -O /root/$bkup.vps http://$IP:82/backup/$bkup.vps  
 		if [ -f "/root/$bkup.vps" ]
 		then
 			echo ""
@@ -160,7 +160,7 @@ echo -e "\033[01;35m"
 			exit
 		else
 			echo ""
-			echo -e "\033[1;33mဖိုင် \033[1;32m$bkup.vps \033[1;33mBackup file not found!\033[0m"
+			echo -e "\033[1;33mFile \033[1;32m$bkup.vps \033[1;33mBackup file not found!\033[0m"
 			echo -e "\033[1;33mBe sure to back up the files \033[1;32m$bkup.vps finish\033[0m"
 			echo ""
 			exit
@@ -198,7 +198,7 @@ curl "https://YourDomain/add_free.php?update_free=true&ip=$dns&quser=$root&qpass
 clear
 
 
-			echo -e "\033[1;36mအရန်ဒေတာ\033[1;36m Completed successfully\033[0m"
+			echo -e "\033[1;36mBackup\033[1;36m Completed successfully\033[0m"
 			echo ""
 			exit
 		else
@@ -233,7 +233,7 @@ wget -O /root/backup.vps http://$bkup/backup.vps
 			exit
 		else
 			echo ""
-			echo -e "\033[1;33mမှ ဖိုင် \033[1;32m$bkup \033[1;33mBackup file not found!\033[0m"
+			echo -e "\033[1;33mFile \033[1;32m$bkup \033[1;33mBackup file not found!\033[0m"
 			echo -e "\033[1;33mBe sure to backup the files \033[1;32m$bkup finish\033[0m"
 			echo ""
 			exit
