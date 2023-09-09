@@ -3,7 +3,7 @@ clear
 echo ""
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "\033[0;32m-        TRANSLATE BY San Soe  Modified                  -\033[0m"
-echo -e "\033[0;32m-              Telegram ID : https://t.me/sansoe2021                        -\033[0m"
+echo -e "\033[0;32m-        Telegram ID : https://t.me/sansoe2021                        -\033[0m"
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo ""
 backbot=$1
@@ -71,11 +71,11 @@ backbot=$1
 	}
 	echo -e "\E[44;1;37m             Backup Manager              \E[0m"
 	echo ""
-	echo -e "\033[1;31m[\033[1;36m1\033[1;31m] \033[1;37m• \033[1;33mสร้างไฟล์แบ็คอัพ \033[1;37m"
-	echo -e "\033[1;31m[\033[1;36m2\033[1;31m] \033[1;37m• \033[1;33mคืนค่าผู้ใช้ (แอดมิน) \033[1;37m"
-	echo -e "\033[1;31m[\033[1;36m3\033[1;31m] \033[1;37m• \033[1;33mเพิ่ม User SIMTHAI VPN\033[1;37m"
-    echo -e "\033[1;31m[\033[1;36m4\033[1;31m] \033[1;37m• \033[1;33mคืนค่าผู้ใช้ด้วย IP (สคริป SPVPNTH)\033[1;37m"
-	echo -e "\033[1;31m[\033[1;36m5\033[1;31m] \033[1;37m• \033[1;33mย้อนกลับ \033[1;37m"
+	echo -e "\033[1;31m[\033[1;36m1\033[1;31m] \033[1;37m• \033[1;33mCreate a backup file \033[1;37m"
+	echo -e "\033[1;31m[\033[1;36m2\033[1;31m] \033[1;37m• \033[1;33mRestore user (admin) \033[1;37m"
+	echo -e "\033[1;31m[\033[1;36m3\033[1;31m] \033[1;37m• \033[1;33mAdd User VPN\033[1;37m"
+    echo -e "\033[1;31m[\033[1;36m4\033[1;31m] \033[1;37m• \033[1;33mRestore user by IP (SKS script)\033[1;37m"
+	echo -e "\033[1;31m[\033[1;36m5\033[1;31m] \033[1;37m• \033[1;33mCancel \033[1;37m"
 	echo ""
 	echo -ne "\033[1;32mWHAT DO YOU WANT TO DO\033[1;31m ?\033[1;37m : "; read opcao
 	if [[ "$opcao" = '1' ]]; then
@@ -128,40 +128,40 @@ echo  ""
 echo -e "\033[1;35m { ----------------------------------------------- }  "
 echo -e "\033[1;35m { -------------------San Soe-------------------- }  "
 echo -e "\033[1;35m { ----------------------------------------------- }  "
-echo -e "\033[1;31m { th1 }                ဆာဗာ ၁"
-echo -e "\033[1;32m { th2 }                ဆာဗာ ၂"
-echo -e "\033[1;33m { th3 }                ဆာဗာ ၃"
-echo -e "\033[1;34m { th4 }                ဆာဗာ ၄" 
-echo -e "\033[1;34m { th5 }                ဆာဗာ ၅" 
-echo -e "\033[1;34m { th6 }                ဆာဗာ ၆" 
+echo -e "\033[1;31m { th1 }                Server 1"
+echo -e "\033[1;32m { th2 }                Server 2"
+echo -e "\033[1;33m { th3 }                Server 3"
+echo -e "\033[1;34m { th4 }                Server 4" 
+echo -e "\033[1;34m { th5 }                Server 5" 
+echo -e "\033[1;34m { th6 }                Server 6" 
 echo -e "\033[1;35m { ----------------------------------------------- }  "
    
-    read -p "မိတ္တူကူးထားသည့်အရာ၏ အမည်ကို ထည့်ပါ :  " -e bkup
+    read -p "Enter the name of backup :  " -e bkup
     echo ""
     echo ""
 cd /
-wget -O /root/$bkup.vps https://raw.githubusercontent.com/sansoe2022/own-sshplus-script/main/backup/$bkup.vps  
+wget -O /root/$bkup.vps https://yourDomain/backup/$bkup.vps  
 		if [ -f "/root/$bkup.vps" ]
 		then
 			echo ""
-			echo -e "\033[1;36mဆောင်ရွက်ဆဲဖြစ်သည်..."
+			echo -e "\033[1;36min progress..."
 			echo ""
 			sleep 2s
 			cp /root/$bkup.vps /$bkup.vps
 			cd /
 			tar -xvf $bkup.vps
 			rm /$bkup.vps
-     echo "=== ပြီးသွားပါပြီ === "
+     echo "=== Complete === "
 echo -e "\033[01;35m"
 
 			echo ""
-			echo -e "\033[1;36mအရန်ဒေတာ\033[1;36m အောင်မြင်စွာပြီးမြောက်ခဲ့ပါသည်\033[0m"
+			echo -e "\033[1;36mBackup data\033[1;36m Completed successfully\033[0m"
 			echo ""
 			exit
 		else
 			echo ""
-			echo -e "\033[1;33mဖိုင် \033[1;32m$bkup.vps \033[1;33mအရန်ဖိုင်ကို ရှာမတွေ့ပါ!\033[0m"
-			echo -e "\033[1;33mဖိုင်များကို အရန်သိမ်းရန် သေချာပါစေ \033[1;32m$bkup.vpsပြီးပြီ\033[0m"
+			echo -e "\033[1;33mဖိုင် \033[1;32m$bkup.vps \033[1;33mBackup file not found!\033[0m"
+			echo -e "\033[1;33mBe sure to back up the files \033[1;32m$bkup.vps finish\033[0m"
 			echo ""
 			exit
 		fi
@@ -176,34 +176,34 @@ echo -e "\033[1;34m"
     echo ""
 echo "
 ╭━━━━━━━━━━━━━━━━━━━━━━━╮"
-echo " ┈┣ DNS CloudFlare တွင် ဦးစွာထည့်ရပါမည်  "
+echo " ┈┣ DNS must be added to CloudFlare first  "
 echo " ╰━━━━━━━━━━━━━━━━━━━━━━━╯"
 read -p " : " dns
 
 echo "
 ╭━━━━━━━━━━━━━━━━━━━━━━━╮"
-echo " ┈┣ root အသုံးပြုသူအမည် root သာ  "
+echo " ┈┣ Username root only  "
 echo " ╰━━━━━━━━━━━━━━━━━━━━━━━╯"
 read -p " : " root
 
 echo "
 ╭━━━━━━━━━━━━━━━━━━━━━━━╮"
-echo " ┈┣ ဆာဗာ စကားဝှက်  "
+echo " ┈┣ Server password  "
 echo " ╰━━━━━━━━━━━━━━━━━━━━━━━╯"
 read -p " : " pass
 
-curl "https://spnet-vpn.com/add_free.php?update_free=true&ip=$dns&quser=$root&qpass=$pass"
+curl "https://YourDomain/add_free.php?update_free=true&ip=$dns&quser=$root&qpass=$pass"
 
 
 clear
 
 
-			echo -e "\033[1;36mအရန်ဒေတာ\033[1;36m အောင်မြင်စွာပြီးမြောက်ခဲ့ပါသည်\033[0m"
+			echo -e "\033[1;36mအရန်ဒေတာ\033[1;36m Completed successfully\033[0m"
 			echo ""
 			exit
 		else
 			echo ""
-			echo -e "\033[1;33mမအောင်မြင်ပါက၊ အရန်ကူးယူထားခြင်း ရှိ၊ မရှိ စစ်ဆေးပါ \033[1;32m\033[0m"
+			echo -e "\033[1;33mIf it failed, Is it backed up? Check first \033[1;32m\033[0m"
 			echo ""
 			exit
 		
@@ -213,7 +213,7 @@ clear
 echo  ""
 echo  ""
 echo  ""
-    read -p "အရန် IP ကိုထည့်ပါ :  " -e bkup
+    read -p "Enter the backup IP :  " -e bkup
     echo ""
     echo ""
 cd /
@@ -221,20 +221,20 @@ wget -O /root/backup.vps http://$bkup/backup.vps
 		if [ -f "/root/$bkup.vps" ]
 		then
 			echo ""
-			echo -e "\033[1;36mဆောင်ရွက်ဆဲဖြစ်သည်..."
+			echo -e "\033[1;36min progress..."
 			echo ""
 			sleep 2s
 			cp /root/bankup.vps /backup.vps
 			cd /
 			tar -xvf backup.vps
 			rm /backup.vps
-			echo -e "\033[1;36mအရန်ဒေတာ\033[1;36m အောင်မြင်စွာဆောင်ရွက်ခဲ့ပါသည်\033[0m"
+			echo -e "\033[1;36mBackup\033[1;36m Successfully completed\033[0m"
 			echo ""
 			exit
 		else
 			echo ""
-			echo -e "\033[1;33mမှ ဖိုင် \033[1;32m$bkup \033[1;33mအရန်ဖိုင်ကို ရှာမတွေ့ပါ!\033[0m"
-			echo -e "\033[1;33mဖိုင်များကို အရန်သိမ်းရန် သေချာပါစေ \033[1;32m$bkup ပြီးပြီ\033[0m"
+			echo -e "\033[1;33mမှ ဖိုင် \033[1;32m$bkup \033[1;33mBackup file not found!\033[0m"
+			echo -e "\033[1;33mBe sure to backup the files \033[1;32m$bkup finish\033[0m"
 			echo ""
 			exit
 		fi
