@@ -1,8 +1,8 @@
 #!/bin/bash
 echo ""
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "\033[0;32m-        TRANSLATE BY SanSoe  -  Modified      -\033[0m"
-echo -e "\033[0;32m-        Telegram ID : https://t.me/sansoe2021           -\033[0m"
+echo -e "\033[0;32m        TRANSLATE BY SanSoe  -  Modified      \033[0m"
+echo -e "\033[0;32m        Telegram ID : https://t.me/sansoe2021           \033[0m"
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo ""
 IP=$(cat /etc/IP)
@@ -31,7 +31,7 @@ then
 	tput setaf 7 ; tput setab 1 ; tput bold ; echo "" ; echo "This user already exists." ; echo "" ; tput sgr0
 	exit 1
 fi
-echo -ne "\033[1;32mpassword\033[1;37m: "; read pass
+echo -ne "\033[1;32mPassword\033[1;37m: "; read pass
 if [[ -z $pass ]]
 then
 echo ""
@@ -74,6 +74,6 @@ echo -e "\033[1;32mPassword:\033[1;37m $pass"
 echo -e "\033[1;32mLimit:\033[1;37m $limit"
 echo -e "\033[1;32mValid:\033[1;37m $u_temp Minutos"
 echo ""
-echo -e "\033[1;33mAfter the defined time the user"
-echo -e "\033[1;32m$nome \033[1;33mwill be disconnected and deleted.\033[0m"
+echo -e "\033[1;33mAfter expired time the user"
+echo -e "\033[1;32m$nome \033[1;33mwill be disconnected and deleted\033[0m"
 exit
