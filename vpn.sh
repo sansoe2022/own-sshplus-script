@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# By SP-VPN TH
+# By SKS
 # ==================================================
 
 # initialisasi var
