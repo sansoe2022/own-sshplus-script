@@ -382,7 +382,7 @@ echo "$username $sshlimiter" >>/root/usuarios.db
 				echo -e "\033[1;32mLINK\033[1;37m: \033[1;36m$IP:81/openvpn/$username.zip"
 			}
 		} || {
-			echo -e "\033[1;32mDisponivel em\033[1;31m" ~/"$username.zip\033[0m"
+			echo -e "\033[1;32mAvailable in\033[1;31m" ~/"$username.zip\033[0m"
 			sleep 1
 		}
 	} || {
