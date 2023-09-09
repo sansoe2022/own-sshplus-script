@@ -101,9 +101,9 @@ service ssh restart
 
 clear
 echo "
- ตั้งค่าเสร็จเรียบร้อย
+ Settings completed
  
- ข้อมูลเข้่าระบบ
+ Login information
 
  SERVER_IP : $(wget -qO- ipv4.icanhazip.com)
  port : 22
