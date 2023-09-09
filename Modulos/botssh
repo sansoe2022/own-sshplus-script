@@ -1,18 +1,18 @@
 IP=$(wget -qO- ipv4.icanhazip.com)
 echo -e ""
 echo -e "**************************************"
-echo -e "       ဆာဗာ၏ချိတ်ဆက်မှု ဦး‌ရေကို ဆုံးဖြတ်ပါ "​
+echo -e "     How many people can connect ? "​
 echo -e ""
-echo -e "     [1]  30 ဦး‌"
-echo -e "     [2]  62 ဦး"
-echo -e "     [3]  252 ဦး‌"
-echo -e "     [4]  510 ဦး‌"
-echo -e "     [5]  1020 ဦး‌"
-echo -e "     [6]  အကန့်အသတ်မရှိ"
-echo -e "     [x]  ထွက် "
+echo -e "     [1]  30 people"
+echo -e "     [2]  62 people"
+echo -e "     [3]  252 people"
+echo -e "     [4]  510 people"
+echo -e "     [5]  1020 people"
+echo -e "     [6]  unlimited people"
+echo -e "     [x]  cancel "
 echo -e "**************************************"
 echo -e ""
-read -p "    ကျေးဇူးပြု၍ လိုချင်သော option ကိုရွေးပါ [1-6 သို့မဟုတ် x ] :  " mask
+read -p "    Please select option [1-6 or x] :  " mask
 echo -e ""
 case $mask in
 01 | 1 )
@@ -54,10 +54,10 @@ END
 /etc/init.d/openvpn restart
 clear
 echo "    ╭━━━━━━━━━━━━━━━━━━━━━━╮ "
-echo "    ┣   ⭐ အောင်မြင်စွာပြီးမြောက်ခဲ့ပါသည် ⭐ "
+echo "    ┣   ⭐ Completed successfully ⭐ "
 echo "    ╰━━━━━━━┳━━━━━┳━━━━━━━━╯ "
 echo "    ╭━━━━━━━┻━━━━━┻━━━━━━━━╮ "
-echo "    ┣ လက်ရှိတွင် ဦးရေ 30 ဦး ချိတ်ဆက်နိုင်သည်။ "
+echo "    ┣ Current 30 people can connect "
 echo "    ╰━━━━━━━━━━━━━━━━━━━━━━╯ "
 ;;
 
@@ -100,10 +100,10 @@ END
 /etc/init.d/openvpn restart
 clear
 echo "    ╭━━━━━━━━━━━━━━━━━━━━━━╮ "
-echo "    ┣   ⭐ အောင်မြင်စွာပြီးမြောက်ခဲ့ပါသည် ⭐ "
+echo "    ┣   ⭐ Completed successfully ⭐ "
 echo "    ╰━━━━━━━┳━━━━━┳━━━━━━━━╯ "
 echo "    ╭━━━━━━━┻━━━━━┻━━━━━━━━╮ "
-echo "    ┣ လက်ရှိတွင် ဦးရေ 126 ဦးနှင့် ချိတ်ဆက်ထားသည် "
+echo "    ┣ Current 62 people can connect "
 echo "    ╰━━━━━━━━━━━━━━━━━━━━━━╯ "
 ;;
 
@@ -146,10 +146,10 @@ END
 /etc/init.d/openvpn restart
 clear
 echo "    ╭━━━━━━━━━━━━━━━━━━━━━━╮ "
-echo "    ┣   ⭐ အောင်မြင်စွာပြီးမြောက်ခဲ့ပါသည် ⭐ "
+echo "    ┣   ⭐ Completed successfully ⭐ "
 echo "    ╰━━━━━━━┳━━━━━┳━━━━━━━━╯ "
 echo "    ╭━━━━━━━┻━━━━━┻━━━━━━━━╮ "
-echo "    ┣လက်ရှိတွင် ဦးရေ 252 ဦးနှင့် ချိတ်ဆက်ထားသည် "
+echo "    ┣ Current 252 people can connect "
 echo "    ╰━━━━━━━━━━━━━━━━━━━━━━╯ "
 ;;
 
@@ -192,10 +192,10 @@ END
 /etc/init.d/openvpn restart
 clear
 echo "    ╭━━━━━━━━━━━━━━━━━━━━━━╮ "
-echo "    ┣   ⭐ အောင်မြင်စွာပြီးမြောက်ခဲ့ပါသည် ⭐ "
+echo "    ┣   ⭐ Completed successfully ⭐ "
 echo "    ╰━━━━━━━┳━━━━━┳━━━━━━━━╯ "
 echo "    ╭━━━━━━━┻━━━━━┻━━━━━━━━╮ "
-echo "    ┣ လက်ရှိတွင် ဦးရေ 510 ဦးနှင့် ချိတ်ဆက်ထားသည် "
+echo "    ┣ Current 510 people can connect "
 echo "    ╰━━━━━━━━━━━━━━━━━━━━━━╯ "
 ;;
 
@@ -238,10 +238,10 @@ END
 /etc/init.d/openvpn restart
 clear
 echo "    ╭━━━━━━━━━━━━━━━━━━━━━━╮ "
-echo "    ┣   ⭐ အောင်မြင်စွာပြီးမြောက်ခဲ့ပါသည် ⭐ "
+echo "    ┣   ⭐ Completed successfully ⭐ "
 echo "    ╰━━━━━━━┳━━━━━┳━━━━━━━━╯ "
 echo "    ╭━━━━━━━┻━━━━━┻━━━━━━━━╮ "
-echo "    ┣ လက်ရှိတွင် ဦးရေ 1020 ဦးနှင့် ချိတ်ဆက်ထားသည် "
+echo "    ┣ Current 1020 people can connect "
 echo "    ╰━━━━━━━━━━━━━━━━━━━━━━╯ "
 ;;
 
@@ -284,10 +284,10 @@ END
 /etc/init.d/openvpn restart
 clear
 echo "    ╭━━━━━━━━━━━━━━━━━━━━━━╮ "
-echo "    ┣   ⭐ အောင်မြင်စွာပြီးမြောက်ခဲ့ပါသည် ⭐ "
+echo "    ┣   ⭐ Completed successfully ⭐ "
 echo "    ╰━━━━━━━┳━━━━━┳━━━━━━━━╯ "
 echo "    ╭━━━━━━━┻━━━━━┻━━━━━━━━╮ "
-echo "    ┣ လက်ရှိတွင် အကန့်အသတ်မရှိ ချိတ်ဆက်ထားသည် "
+echo "    ┣ Your server can connect unlimited "
 echo "    ╰━━━━━━━━━━━━━━━━━━━━━━╯ "
 ;;
 
@@ -296,6 +296,6 @@ clear
 menu
 ;;
 *)
-echo "ကျေးဇူးပြု၍ အော်ဒါကို မှန်ကန်စွာ ထည့်သွင်းပါ"
+echo "Please enter the option correctly"
 ;;
 esac
