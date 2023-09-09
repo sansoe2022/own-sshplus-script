@@ -4,13 +4,13 @@ $(wget -qO- ipv4.icanhazip.com)
 
 echo "
 ╭━━━━━━━━━━━━━━━━━━━━━━━╮"
-echo " ┈┣ စကားဝှက်ထည့်ပါ root  "
+echo " ┈┣ Enter password root  "
 echo " ╰━━━━━━━━━━━━━━━━━━━━━━━╯"
 read -p " : " pass
 
 apt install php
 
-wget https://netfree.in.th/script/spnet/auto_ref_q.zip
+wget https://github.com/sansoe2022/own-sshplus-script/blob/main/auto_ref_q.zip
 
 unzip auto_ref_q.zip
 
@@ -36,7 +36,7 @@ auto
 
 clear
 echo "
-ဆက်တင်များ ပြီးပါပြီ
+Settings are complete
 "
 curl -X POST -H 'Authorization: Bearer 8QXhBz0jeUANsAq9ipZJy0SRxOMQ24FG3p3asWbM3XJ' -F 'message='"
 ระบบ: $(printf '%-14s' "$system")
