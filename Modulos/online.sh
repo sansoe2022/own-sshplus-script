@@ -2,7 +2,7 @@
 
  function onapp1() {
         clear
-        echo -e "\n\033[1;32mအွန်လိုင်းတွင် လူများကို စစ်ဆေးရန် လုပ်ဆောင်ချက်ကို ထည့်သွင်းပါ... \033[0m"
+        echo -e "\n\033[1;32mAdd function to check people online... \033[0m"
         echo ""
         apt install apache2 -y >/dev/null 2>&1
         sed -i "s/Listen 80/Listen 82/g" /etc/apache2/ports.conf >/dev/null 2>&1
@@ -18,14 +18,14 @@
         }
         IP=$(wget -qO- ipv4.icanhazip.com) >/dev/null 2>&1
         echo -e "\n\033[1;32m  ONLINE APP ATIVO !\033[0m"
-        echo -e "\033[1;31m \033[1;33mURL de Usuários Online para usar no App\033[0m"
+        echo -e "\033[1;31m \033[1;33mOnline Users URL to use in the App\033[0m"
         echo -e " http://$IP:82/server/online"
         sleep 10
         menu
     }
     function onapp2() {
         clear
-        echo -e "\033[1;32mPARANDO O ONLINE APP... \033[0m"
+        echo -e "\033[1;32mSTOPPING THE ONLINE APP... \033[0m"
         echo ""
         fun_stponlineapp() {
             sleep 1
@@ -39,7 +39,7 @@
 
         fun_bar 'fun_stponlineapp' 'sleep 3'
         rm -rf /var/www/html/server >/dev/null 2>&1
-        echo -e "\n\033[1;31m ONLINE APP PARADO !\033[0m"
+        echo -e "\n\033[1;31m ONLINE APP STOPPED !\033[0m"
         sleep 3
         menu
     }
