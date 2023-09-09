@@ -3,15 +3,15 @@ IP=$(wget -qO- ipv4.icanhazip.com)
  
 echo -e ""
 echo -e "**************************************"
-echo -e "       ဆာဗာ၏ချိတ်ဆက်မှု ဦး‌ရေကို ဆုံးဖြတ်ပါ"​
+echo -e "     How many people can connect ?"​
 echo -e ""
-echo -e "     [1]  30 ဦး"
-echo -e "     [2]  60 ဦး"
-echo -e "     [3]  250 ဦး"
-echo -e "     [4]  500 ဦး"
-echo -e "     [5]  1020 ဦး"
-echo -e "     [6]  အကန့်အသတ်မရှိ"
-echo -e "     [x]  ထွက်မည်"
+echo -e "     [1]  30 people"
+echo -e "     [2]  60 people"
+echo -e "     [3]  250 people"
+echo -e "     [4]  500 people"
+echo -e "     [5]  1020 people"
+echo -e "     [6]  unlimited people"
+echo -e "     [x]  cancel"
 echo -e "**************************************"
 echo -e ""
 read -p "    ကျေးဇူးပြု၍ လိုချင်သော option ကိုရွေးပါ။ [1-6 သို့မဟုတ် x] :  " mask
