@@ -41,7 +41,7 @@ IP2=$(cat /root/IP)
 if [[ "$IP" != "" ]]; then
 if [[ "$IP" != "$IP2" ]]; then
 curl -X POST -H 'Authorization: Bearer hhhh' -F 'message='" 
-IP ที่ ပြောင်းလဲခဲ့သည်:$IP"'' https://notify-api.line.me/api/notify > /dev/null 2>&1
+Changed IP:$IP"'' https://notify-api.line.me/api/notify > /dev/null 2>&1
 rm /root/IP
 echo "$IP" >> /root/IP
 fi
