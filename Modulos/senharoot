@@ -2,7 +2,7 @@ clear
 
 echo "
  ╭━━━━━━━━━━━━━━━━━━━━━━━╮"
-echo " ┈┣ အမည်ဖြင့် ဝင်ရောက်ရန် စကားဝှက်တစ်ခု သတ်မှတ်ပါ root  "
+echo " ┈┣ Set a password to login as root  "
 echo " ╰━━━━━━━━━━━━━━━━━━━━━━━╯"
 read -p " : " pass
 cat > /etc/ssh/sshd_config <<-SSHROOT
