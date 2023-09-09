@@ -2,15 +2,15 @@
 clear
 echo ""
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "\033[0;32m-        TRANSLATE BY San Soe  - Modified     -\033[0m"
-echo -e "\033[0;32m-        Telegram : https://t.me/sansoe2021           -\033[0m"
+echo -e "\033[0;32m        TRANSLATE BY San Soe  - Modified     \033[0m"
+echo -e "\033[0;32m        Telegram : https://t.me/sansoe2021           \033[0m"
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo ""
 echo -e "\E[44;1;37m               VPS INFORMATION                 \E[0m"
 echo ""
 if [ -f /etc/lsb-release ]
 then
-echo -e "\033[1;31m• \033[1;32mOPERATIONAL SYSTEM\033[1;31m •\033[0m"
+echo -e "\033[1;31m• \033[1;32mOPERATION SYSTEM\033[1;31m •\033[0m"
 echo ""
 name=$(cat /etc/lsb-release |grep DESCRIPTION |awk -F = {'print $2'})
 codename=$(cat /etc/lsb-release |grep CODENAME |awk -F = {'print $2'})
@@ -26,7 +26,7 @@ echo ""
 fi
 else
 system=$(cat /etc/issue.net)
-echo -e "\033[1;31m• \033[1;32mOPERATIONAL SYSTEM\033[1;31m •\033[0m"
+echo -e "\033[1;31m• \033[1;32mOPERATION SYSTEM\033[1;31m •\033[0m"
 echo ""
 echo -e "\033[1;33mName: \033[1;37m$system"
 echo ""
