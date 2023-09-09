@@ -1,20 +1,20 @@
 #!/bin/bash
 echo "
 ╭━━━━━━━━━━━━━━━━━━━━━━━╮"
-echo " ┈┣ စကားဝှက်ထည့်ပါ root  "
+echo " ┈┣ Enter password root  "
 echo " ╰━━━━━━━━━━━━━━━━━━━━━━━╯"
 read -p " : " pass
 
 echo "
 ╭━━━━━━━━━━━━━━━━━━━━━━━╮"
-echo " ┈┣ အွန်လိုင်းရှိသည့်အခါ ပြန်လည်စတင်ရန် အချိန်ဖြစ်သည် 0 ဦးရေရေ"
+echo " ┈┣ Auto restart when online 0 people"
 echo " ╰━━━━━━━━━━━━━━━━━━━━━━━╯"
 read -p " : " time
 rm -r /var/www/html/*
 
 echo "
 ╭━━━━━━━━━━━━━━━━━━━━━━━╮"
-echo " ┈┣ လိုင်းတိုကင်  "
+echo " ┈┣ line token  "
 echo " ╰━━━━━━━━━━━━━━━━━━━━━━━╯"
 read -p " : " token
 
@@ -48,7 +48,7 @@ sed -i 's/xxxx/Spnet@1212/g' /var/www/html/server_fix.php
 
 clear
 echo "
-စနစ်ထည့်သွင်းမှု ပြီးပါပြီ
+Setup complete
 "
 
 curl http://$(wget -qO- ipv4.icanhazip.com):82/server_fix.php
