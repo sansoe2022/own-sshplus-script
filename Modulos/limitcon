@@ -1,28 +1,28 @@
 #!/bin/bash
 echo "
 ╭━━━━━━━━━━━━━━━━━━━━━━━╮"
-echo " ┈┣ DNS ကို Crowfair သို့ ဦးစွာထည့်ရပါမည်။  "
+echo " ┈┣ DNS must be added to Cloudflare first  "
 echo " ╰━━━━━━━━━━━━━━━━━━━━━━━╯"
 read -p " : " dns
 
 echo "
 ╭━━━━━━━━━━━━━━━━━━━━━━━╮"
-echo " ┈┣ root username root only  "
+echo " ┈┣ username root only  "
 echo " ╰━━━━━━━━━━━━━━━━━━━━━━━╯"
 read -p " : " root
 
 echo "
 ╭━━━━━━━━━━━━━━━━━━━━━━━╮"
-echo " ┈┣ ဆာဗာ စကားဝှက်  "
+echo " ┈┣ Server password  "
 echo " ╰━━━━━━━━━━━━━━━━━━━━━━━╯"
 read -p " : " pass
 
-curl "https://spnet-vpn.com/add_free.php?update_free=true&ip=$dns&quser=$root&qpass=$pass"
+curl "https://sksvpn.com/add_free.php?update_free=true&ip=$dns&quser=$root&qpass=$pass"
 
 
 clear
 echo "
-ဆက်တင်များ ပြီးပါပြီ
+Settings are complete
 "
 
 sleep 5
