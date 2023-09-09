@@ -14,7 +14,7 @@ echo -e "     [6]  unlimited people"
 echo -e "     [x]  cancel"
 echo -e "**************************************"
 echo -e ""
-read -p "    ကျေးဇူးပြု၍ လိုချင်သော option ကိုရွေးပါ။ [1-6 သို့မဟုတ် x] :  " mask
+read -p "    Please select option [1-6 or x] :  " mask
 echo -e ""
 case $mask in
 1)
