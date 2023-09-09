@@ -32,7 +32,7 @@ http {
 }
 END
  mkdir -p /home/website
- echo "<pre>Source by LOLY-VPN | Donate via TrueMoney Wallet : 0947452219</pre>" > /home/website/index.php
+ echo "<pre>Source by SKS | Donate via TrueMoney Wallet : 0820731295</pre>" > /home/website/index.php
  args='$args'
  uri='$uri'
  document_root='$document_root'
@@ -64,7 +64,7 @@ END
     service nginx restart
 }
 while true; do
-    echo 'verificando...'
+    echo 'Checking...'
 	fun_nginx > /dev/null 2>&1
 	sleep 15s
 done
