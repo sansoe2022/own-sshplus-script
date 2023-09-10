@@ -3,7 +3,7 @@ clear
 MYIP2="s/xxxxxxxxx/$MYIP/g";
 MYIP=$(wget -qO- icanhazip.com);
 [[ "$(whoami)" != "root" ]] && {
-echo -e "\033[1;33m[\033[1;31mErro\033[1;33m] \033[1;37m- \033[1;33mYour server needs to be root\033[0m"
+echo -e "\033[1;33m[\033[1;31mError\033[1;33m] \033[1;37m- \033[1;33mYour server needs to be root\033[0m"
 rm $HOME/Plus > /dev/null 2>&1; exit 0
 }
 _lnk=$(echo 'z1:y#x.5s0ul&p4hs$s.0a72d*n-e!v89e032:3r'| sed -e 's/[^a-z.]//ig'| rev); _Ink=$(echo '/3×u3#s87r/l32o4×c1a×l1/83×l24×i0b×'|sed -e 's/[^a-z/]//ig'); _1nk=$(echo '/3×u3#s×87r/83×l2×4×i0b×'|sed -e 's/[^a-z/]//ig')
@@ -49,11 +49,11 @@ echo -e "\033[1;31m════════════════════�
 echo ""
 echo -e "             \033[1;31mATTENTION! \033[1;33mThis script!\033[0m"
 echo ""
-echo -e "\033[1;31m• \033[1;33mInstall the script package as a VPN server tool\033[0m"
-echo -e "\033[1;33mUse a dark color to make the letters stand out, by SanSoe\033[0m"
+echo -e "\033[1;31m• \033[1;33mThis script is for setup vpn server tool\033[0m"
+echo -e "\033[1;33mRecommend: Use a dark background colour for look better \nby San Kyaw Soe\033[0m"
 echo ""
 echo -e "\033[1;32m• \033[1;33mATTENTION! \033[1;33mBuy this script\033[0m"
-echo -e "\033[1;33mNo resell to anyone is permitted\033[0m"
+echo -e "\033[1;33mNo resale allow to anyone\033[0m"
 echo ""
 echo -e "\033[1;31m≠×≠×≠×≠×≠×≠×≠×[\033[1;33m • \033[1;32mEDIT:@SanSoe\033[1;33m •\033[1;31m ]≠×≠×≠×≠×≠×≠×≠×\033[0m"
 echo ""
@@ -84,11 +84,11 @@ echo ""
 clear
 echo -e "\n\033[0;34m═════════════════════════════════════════════════\033[0m"
 echo ""
-echo -e "                 \033[1;33m• \033[1;31mwarning \033[1;33m• \033[0m"
+echo -e "                 \033[1;33m• \033[1;31mWarning \033[1;33m• \033[0m"
 echo ""
-echo -e "\033[1;33mUser database \033[1;32m(usuarios.db) \033[1;33muser is"
+echo -e "\033[1;33mUser database \033[1;32m(users.db) \033[1;33muser is"
 echo -e "Found!I want to save the restrictions"
-echo -e "User's wishes"
+echo -e "Please select"
 echo -e "Create a new database?\033[0m"
 echo -e "\n\033[1;37m[\033[1;31m1\033[1;37m] \033[1;33mKeep the database current\033[0m"
 echo -e "\033[1;37m[\033[1;31m2\033[1;37m] \033[1;33mCreate a new database\033[0m"
@@ -135,13 +135,13 @@ fun_bar "$_Ink/list $_lnk $_Ink $_1nk $key"
 clear
 IP=$(wget -qO- ipv4.icanhazip.com);
 curl -X POST -H 'Authorization: Bearer ' -F 'message='" 
-เซิฟเวอร์  $IP "'' https://notify-api.line.me/api/notify > /dev/null 2>&1
+Server  $IP "'' https://notify-api.line.me/api/notify > /dev/null 2>&1
 conexao
 echo ""
 cd $HOME
 echo -e "        \033[1;33m • \033[1;32mInstallation complete...\033[1;33m • \033[0m"
 echo ""
 echo -e "\033[1;31m \033[1;33mEnter menu to continue : \033[1;32mmenu\033[0m"
-echo -e "\033[1;33mFor more information, Contact Admin San Soe \033[1;31m(\033[1;36mTELEGRAM\033[1;31m): \033[1;37mhttps://t.me/sansoe2021\033[0m"
+echo -e "\033[1;33mFor more information, Contact Admin San Kyaw Soe \033[1;31m(\033[1;36mTELEGRAM\033[1;31m): \033[1;37mhttps://t.me/sansoe2021\033[0m"
 rm $HOME/Plus && cat /dev/null > ~/.bash_history && history -c
 
