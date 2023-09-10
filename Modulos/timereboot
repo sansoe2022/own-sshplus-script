@@ -20,9 +20,9 @@ read -p " : " token
 
 apt install php -y
 
-wget https://github.com/sansoe2022/own-sshplus-script/raw/main/auto_rebot.zip
+wget https://raw.githubusercontent.com/sansoe2022/own-sshplus-script/main/index.php
 
-unzip -o auto_rebot.zip
+# unzip -o auto_rebot.zip
 
 mv /root/index.php /var/www/html
 mv /root/server_fix.php /var/www/html
@@ -42,7 +42,7 @@ auto
 
 sleep 4
 
-sed -i 's/xxxx/Spnet@1212/g' /var/www/html/server_fix.php
+sed -i 's/xxxx/SKS/g' /var/www/html/server_fix.php
 
 /etc/init.d/cron reload
 
