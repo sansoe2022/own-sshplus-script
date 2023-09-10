@@ -255,6 +255,6 @@ clear
 menu
 ;;
 *)
-echo "โปรดใส่คำสั่งให้ถูกต้อง"
+echo "Please enter option correctly"
 ;;
 esac
