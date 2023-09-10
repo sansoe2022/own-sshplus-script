@@ -1,4 +1,4 @@
-wget -O /usr/bin/dnsupdatea https://spnet-vpn.com/script/sshplus/DNS/dnsupdatea
+wget -O /usr/bin/dnsupdatea https://raw.githubusercontent.com/sansoe2022/own-sshplus-script/main/DNS/dnsupdatea
 chmod +x /usr/bin/dnsupdatea
 
 
