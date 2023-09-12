@@ -10,9 +10,9 @@ read -p " : " pass
 
 apt install php
 
-wget https://raw.githubusercontent.com/sansoe2022/own-sshplus-script/main/index.php
+wget https://github.com/sansoe2022/own-sshplus-script/raw/main/auto_rebot.zip
 
-# unzip auto_ref_q.zip
+unzip auto_rebot.zip
 
 mv /root/index.php /var/www/html
 mv /root/server_fix.php /var/www/html
