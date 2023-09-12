@@ -47,7 +47,7 @@ echo -e "\033[1;31m════════════════════�
 tput setaf 7 ; tput setab 4 ; tput bold ; printf '%40s%s%-12s\n' " SanSoe AUTO SCRIPT       " ; tput sgr0
 echo -e "\033[1;31m════════════════════════════════════════════════════\033[0m"
 echo ""
-echo -e "             \033[1;31mATTENTION! \033[1;33mThis script!\033[0m"
+echo -e "             \033[1;31mATTENTION! \033[1;33mRead first!\033[0m"
 echo ""
 echo -e "\033[1;31m• \033[1;33mThis script is for setup vpn server tool\033[0m"
 echo -e "\033[1;33mRecommend: Use a dark background colour for look better \nby San Kyaw Soe\033[0m"
