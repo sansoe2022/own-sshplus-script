@@ -14,7 +14,7 @@
             color: #333;
         }
         table {
-            width: 70%;
+            width: 85%;
             margin: 20px auto;
             border-collapse: collapse;
             background-color: #fff;
@@ -29,7 +29,7 @@
             background-color: #f2f2f2;
         }
         font {
-            color: #FF0000;
+            color: #00C853;
         }
         .total-users {
             text-align: center;
@@ -42,21 +42,18 @@
     <h1>Server status</h1>
     <?php
     $servers = [
-        'TH-01' => 'http://116.206.125.12:82/server/online',
-        'TH-02' => 'http://116.206.125.13:82/server/online',
-        'TH-03' => 'http://116.206.125.14:82/server/online',
-        'TH-04' => 'http://116.206.125.15:82/server/online',
-        'TH-05' => 'http://203.150.243.147:82/server/online',
-        'TH-06' => 'http://103.114.202.148:82/server/online',
-        'TH-07' => 'http://103.114.202.146:82/server/online',
+        'Server FREE 1' => 'http://45.150.128.104:81/server/online',
+        'Server FREE 2' => 'http://45.136.254.77:81/server/online',
+        'Server FREE 3' => 'http://43.229.79.216:81/server/online',
+        'Server FREE 4' => 'http://43.228.85.67:81/server/online',
     ];
 
     $totalOnlineCount = 0;
 
     echo '<table>';
     echo '<tr>
-<th>status</th>
-<th>Server</th>
+<th>Server Name</th>
+<th>Status</th>
 </tr>';
 
     foreach ($servers as $serverName => $serverURL) {
@@ -64,7 +61,7 @@
 
         if ($response !== false) {
             $onlineCount = intval($response);
-            echo "<tr><td>$serverName</td><td>being online <font color='#FF0000'>$onlineCount</font> คน</td></tr>";
+            echo "<tr><td>$serverName</td><td>Online <font color='#00C853'>$onlineCount</font> people</td></tr>";
             $totalOnlineCount += $onlineCount;
         } else {
             $error = error_get_last();
@@ -78,7 +75,7 @@
     if (connection_status() != CONNECTION_NORMAL) {
         header("Refresh:0");
     }
-    echo "<div class='total-users'>All users on all servers: <font color='#3358FF'>$totalOnlineCount</font> person</div>";
+    echo "<div class='total-users'>Total online users: <font color='#00C853'>$totalOnlineCount</font> people</div>";
     ?>
 </body>
 </html>
